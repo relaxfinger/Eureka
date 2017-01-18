@@ -1170,8 +1170,8 @@ public class Row<T: Equatable, Cell: CellType where Cell: BaseCell, Cell.Value =
         if !isDisabled {
             cell?.didSelect()
         }
-        customDidSelect()
         callbackCellOnSelection?()
+        customDidSelect()
     }
     
     override public func hightlightCell() {
